@@ -1,32 +1,18 @@
+print("โปรแกรมคำนวนค่าไฟ โดย ปิยวัฒน์ คำนวน กาย")
 
-print('โปรแกรมคำนวนคะแนน')
+Electricity_bill = int(input("กรุณากรอกค่าไฟของท่าน \n "))
 
-score_1 = int(input("คะแนนรวมวิชาภาษาอังกฤษ \n"))
+if Electricity_bill <= 9:
+   
+   print("ค่าไฟฟรี")
 
-score_2 = int(input("คะแนนรวมวิชาชีวะ_1 \n"))
+elif Electricity_bill <= 50: 
+   
+     print("ค่าไฟ 2บาท/หน่วย")
 
-score_3 = int(input("คะแนนรวมวิชาคณิต \n"))
+elif Electricity_bill <= 100: 
 
-
-totle_score =  score_1 + score_2 + score_3
-
-averag = (score_1 + score_2 + score_3)/3
-
-print("คะแนนรวม ; ",totle_score, )
-
-print("คะแนนเฉลี่ย ; ",averag, )
-
-if averag >=80:
-    print("ระดับคะแนน ดีเยียม" )
-
-elif averag  >=60:
-    print("ระดับคะแนน ปานกลาง" )
+     print("ค่าไฟ 3บาท/ต่อหน่วย")
 
 else:
-    print("ระดับคะแนน ตำ่")
- 
-
-print("wed by guy naja") 
-
-
-
+    print("ค่าไฟ 4บาท/ต่อหน่วย")
